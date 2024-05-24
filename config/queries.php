@@ -10,3 +10,4 @@ $categories = "CREATE TABLE `demolte`.`categories` (
 
 $storecategory = "INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`) VALUES (NULL, 'First Category', current_timestamp(), current_timestamp())";
 // $selectecategories = "SELECT id, name FROM categories";
+$fetchrecords = "SELECT * FROM categories";

@@ -1,7 +1,7 @@
 <?php
 include('layouts/header.php');
 require('config/conn.php');
-$selectecategories = "SELECT id, name FROM categories";
+$selectecategories = "SELECT * FROM categories";
 $result = $conn->query($selectecategories);
 ?>
 <div class="content-wrapper">
