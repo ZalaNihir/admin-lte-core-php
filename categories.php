@@ -19,6 +19,7 @@ $result = $conn->query($selectecategories);
                     <tr>
                         <th style="width: 10px">#</th>
                         <th>Task</th>
+                        <th>Created At</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -28,6 +29,7 @@ $result = $conn->query($selectecategories);
                     <tr>
                         <td><?php echo($id);  ?></td>
                         <td><?php echo($category['name']);  ?></td>
+                        <td><?php echo($category['created_at']);  ?></td>
                         <td>
                             <a href="edit_category.php?id=<?php echo($id) ?>" class="btn btn-sm btn-secondary">Edit</a>
                             <a href="deleted_category.php?id=<?php echo($id) ?>" class="btn btn-sm btn-danger">Delete</a>
