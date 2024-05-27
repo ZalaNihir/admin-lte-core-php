@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 
 $categories = "CREATE TABLE `demolte`.`categories` (
@@ -9,5 +9,8 @@ $categories = "CREATE TABLE `demolte`.`categories` (
     PRIMARY KEY (`id`)) ENGINE = InnoDB";
 
 $storecategory = "INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`) VALUES (NULL, 'First Category', current_timestamp(), current_timestamp())";
-// $selectecategories = "SELECT id, name FROM categories";
+$selectecategories = "SELECT id, name FROM categories";
 $fetchrecords = "SELECT * FROM categories";
+$editQuery = "SELECT * FROM `categories` WHERE `categories`.`id` = 6";
+$deletequery = "DELETE FROM `categories` WHERE `categories`.`id` = 6";
+$updateQuery = "UPDATE `categories` SET `name` = 'Zala Nihir' WHERE `categories`.`id` = 6";

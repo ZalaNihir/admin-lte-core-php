@@ -7,7 +7,7 @@ $result = $conn->query($selectecategories);
 <div class="content-wrapper">
     <div class="container">
         <div class="card-header">
-            <h3 class="card-title">Cateogires</h3>
+            <h3 class="card-title">Categories</h3>
             <div class="card-tools">
                 <a href="create_category.php" class="btn btn-primary">Add Category</a>
             </div>
@@ -32,7 +32,7 @@ $result = $conn->query($selectecategories);
                         <td><?php echo($category['created_at']);  ?></td>
                         <td>
                             <a href="edit_category.php?id=<?php echo($id) ?>" class="btn btn-sm btn-secondary">Edit</a>
-                            <a href="deleted_category.php?id=<?php echo($id) ?>" class="btn btn-sm btn-danger">Delete</a>
+                            <a href="deleted_category.php?id=<?php echo($id) ?>" onclick="return confirm('Are your sure?')" class="btn btn-sm btn-danger">Delete</a>
                         </td>
                     </tr>
                     <?php } ?>
